@@ -1,9 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    display: block;
+    display: grid;
     font-size: small;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 10px;
-    height: 100%;
+}
+
+.page {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    margin-bottom: -50px;
 }
 
 ul {
@@ -67,12 +77,7 @@ li a:hover {
     flex-wrap: wrap;
     font-size: smaller;
     height: auto;
-    padding: 10px;
     margin: -10px;
-}
-
-.menu {
-    
 }
 
 .blank {
@@ -84,12 +89,14 @@ li a:hover {
     background-color: #f1f1f1;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-content: flex-end;
     justify-content: space-between;
-    padding: 20px 10px;
-    margin: 10px;
+    padding: 20px;
     flex-wrap: wrap;
     box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
 }
 
 .footer-menu {
